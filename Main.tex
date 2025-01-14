@@ -1,0 +1,74 @@
+\documentclass[a4paper, fleqn,report]{jsbook}
+
+%\documentclass[xelatex,a4paper,precisetext,noautoxspacing]{bxjsbook}
+%
+%\usepackage{fontspec}
+%\setjamainfont{ipam.ttf}
+%\setjasansfont{ipag.ttf}
+%\setjamonofont{ipag.ttf}
+
+\usepackage[dvipdfm,dvipdfmx]{graphicx}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{siunitx}
+
+\usepackage[dvipdfmx, colorlinks=true, bookmarks=true,
+bookmarksnumbered=true, bookmarkstype=toc, linkcolor=blue,
+urlcolor=blue, citecolor=blue]{hyperref}
+\usepackage{pxjahyper}
+
+\setlength{\textheight}{592pt}
+\setlength{\textwidth}{430pt}
+\setlength{\oddsidemargin}{20pt}
+
+
+\renewcommand{\maketitle}{%
+\begin{titlepage}
+ \null \vskip3em% ページ上部の空白t
+ \begin{center}
+  {\huge XX専攻XXコース修士学位論文} \vskip5em
+  {\huge XXの数値解析} \vskip25em
+  {\Large 2025年2月} \vskip1.5em
+  {\Large 学籍番号XX  　　XX　XX} \vskip1.5em
+  %   {\LARGE  } \vskip2em
+ \end{center}%
+\end{titlepage}}
+
+
+\begin{document}
+
+\maketitle
+
+\include{abstract}
+
+%% 目次
+\tableofcontents
+\listoffigures
+\listoftables
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  本文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\include{introduction}
+\include{solution}
+\include{result}
+\include{conclusion}
+
+
+
+%% reference
+\begin{thebibliography}{99}
+\bibitem{test1} reference
+%\bibitem{test2} reference
+%\bibitem{test3} reference
+%
+\end{thebibliography}
+
+
+\appendix
+\chapter{付録１}
+
+\end{document}
+
